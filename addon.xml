@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.inttemp" name="Interior Temperature" version="0.6" provider-name="flixie">
+<addon id="plugin.program.inttemp" name="Interior Temperature" version="0.7" provider-name="flixie">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>executable</provides>
     <summary lang="en_GB">Shows temperature and humidity from sensor</summary>
+    <summary lang="de_DE">Zeigt Innentemperatur und relative Luftfeuchte an</summary>
     <description lang="en_GB">Shows temperature and humidity from sensor</description>
+    <description lang="de_DE">Zeigt Innentemperatur und relative Luftfeuchte an</description>
     <disclaimer lang="en_GB"></disclaimer>
     <platform>all</platform>
     <license>GPL-2.0</license>
@@ -16,6 +18,9 @@
     <source>http://github.com/schuergi/plugin.program.inttemp</source>
     <news>v0.4 (11/08/2019)
       [new] reworked icon
+    </news>
+    <news>v0.7 (11/08/2019)
+      [fix] added German description
     </news>
     <assets>
         <icon>resources/icon.png</icon>

@@ -38,6 +38,6 @@ else:
     line1 = 'Failed to get reading. Try again!'
 
 #line1 = "This is a simple example of notifications"
-time = 5000 #in miliseconds
+time = 8000 #in miliseconds
 
 xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__,line1, time, __icon__))
