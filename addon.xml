@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.flixie.inttemp" name="Interior Temperature" version="0.2" provider-name="flixie">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+    <summary lang="en_GB">Shows temperature and humidity from sensor</summary>
+    <description lang="en_GB">Shows temperature and humidity from sensor</description>
+    <disclaimer lang="en_GB"></disclaimer>
+    <platform>all</platform>
+    <license>GPL-2.0</license>
+  <!--  <forum>https://forum.kodi.tv/showthread.php?tid=xxxx</forum>  may be omitted  -->
+  <!--  <website>http://myplugin.com</website>  the url of the website that contains the videos (or the official website of your plugin). May be omitted.  -->
+    <!--<email>schuergut@freenet.de</email>  may be left omitted  -->
+    <source>http://github.com/schuergi/plugin.flixie.inttemp</source>
+    <news>v1.2.3 (01/02/201x)
+      [new] intial commit
+    </news>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart></fanart>
+        <banner></banner>
+        <screenshot></screenshot>
+    </assets>
+  </extension>
+</addon>
