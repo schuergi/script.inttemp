@@ -1,13 +1,10 @@
 #!/usr/bin/python
-
+# -*- coding: utf-8 -*-
 
 import sys
 import xbmc
 import xbmcaddon
 import Adafruit_DHT
-
-reload(sys)  # Reload does the trick!
-sys.setdefaultencoding('UTF8')
 
 # Sensor should be set to Adafruit_DHT.DHT11,
 # Adafruit_DHT.DHT22, or Adafruit_DHT.AM2302.
@@ -18,8 +15,8 @@ sensor = Adafruit_DHT.AM2302
 #pin = 'P8_11'
 
 # Example using a Raspberry Pi with DHT sensor
-# connected to GPIO22.
-pin = 22
+# connected to GPIO24.
+pin = 24
 
 # Try to grab a sensor reading.  Use the read_retry method which will retry up
 # to 15 times to get a sensor reading (waiting 2 seconds between each retry).
