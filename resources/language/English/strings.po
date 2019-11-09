@@ -1,0 +1,31 @@
+# Kodi Media Center language file
+# Addon Name: Skin Widgets
+# Addon id: service.skin.widgets
+# Addon Provider: Martijn, phil65
+msgid ""
+msgstr ""
+
+msgctxt "#32001"
+msgid "Settings"
+msgstr ""
+
+msgctxt "#32011"
+msgid "GPIO Pin"
+msgstr ""
+
+
+msgctxt "#32012"
+msgid "Sensor model"
+msgstr ""
+
+msgctxt "#32013"
+msgid "display duration"
+msgstr ""
+
+msgctxt "#32014"
+msgid "Humidity"
+msgstr ""
+
+msgctxt "#32015"
+msgid "Failed to read sensor. Please try again!"
+msgstr ""
