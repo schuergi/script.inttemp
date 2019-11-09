@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.inttemp" name="Interior Temperature" version="0.7" provider-name="flixie">
+<addon id="script.inttemp" name="Interior Temp" version="1.0.0" provider-name="flixie">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
   </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
+  <extension point="xbmc.python.script" library="addon.py">
     <provides>executable</provides>
-    <summary lang="en_GB">Shows temperature and humidity from sensor</summary>
-    <summary lang="de_DE">Zeigt Innentemperatur und relative Luftfeuchte an</summary>
-    <description lang="en_GB">Shows temperature and humidity from sensor</description>
-    <description lang="de_DE">Zeigt Innentemperatur und relative Luftfeuchte an</description>
-    <disclaimer lang="en_GB"></disclaimer>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Shows temperature and humidity from sensor</summary>
+    <summary lang="de">Zeigt Innentemperatur und relative Luftfeuchte an</summary>
+    <description lang="en">Shows temperature and humidity from sensor</description>
+    <description lang="de">Zeigt Innentemperatur und relative Luftfeuchte an</description>
+
+    <language>en de</language>
     <platform>all</platform>
     <license>GPL-2.0</license>
-  <!--  <forum>https://forum.kodi.tv/showthread.php?tid=xxxx</forum>  may be omitted  -->
-  <!--  <website>http://myplugin.com</website>  the url of the website that contains the videos (or the official website of your plugin). May be omitted.  -->
-    <!--<email>schuergut@freenet.de</email>  may be left omitted  -->
     <source>http://github.com/schuergi/plugin.program.inttemp</source>
-    <news>v0.4 (11/08/2019)
-      [new] reworked icon
-    </news>
-    <news>v0.7 (11/08/2019)
-      [fix] added German description
+    <news>v1.0 (11/09/2019)
+      [fix] fixed the translations
+      [fix] actually made it work
+      [new] configuration page
     </news>
     <assets>
         <icon>resources/icon.png</icon>
-        <fanart></fanart>
-        <banner></banner>
-        <screenshot></screenshot>
     </assets>
   </extension>
 </addon>
