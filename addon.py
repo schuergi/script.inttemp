@@ -21,17 +21,9 @@ sensor_args = [
      Adafruit_DHT.AM2302
 ]
 
-sensor = sensor_args[int(__settings__.getSetting('model'), base=10)]
-pin = int(__settings__.getSetting('pin'), base=10)
-time = int(__settings__.getSetting('time')) * 1000
-
-# Example using a Beaglebone Black with DHT sensor
-# connected to pin P8_11.
-#pin = 'P8_11'
-
-# Example using a Raspberry Pi with DHT sensor
-# connected to GPIO24.
-#pin = 24
+sensor = sensor_args[__settings__.getSettingInt('model')]
+pin = __settings__.getSettingInt('pin')
+time = __settings__.getSettingInt('time') * 1000
 
 # Try to grab a sensor reading.  Use the read_retry method which will retry up
 # to 15 times to get a sensor reading (waiting 2 seconds between each retry).
@@ -47,8 +39,5 @@ if humidity is not None and temperature is not None:
 
 else:
     line1 = __settings__.getLocalizedString(32015)
-
-#line1 = "This is a simple example of notifications"
-#time = 8000 #in miliseconds
 
 xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__,line1, time, __icon__))
