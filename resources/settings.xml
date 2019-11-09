@@ -3,6 +3,6 @@
     <category label="32001">
         <setting label="32011" type="number" id="pin" default="24"/>
         <setting label="32012" type="enum" id="model" default="AM2302" values="DHT11|DHT22|AM2302"/>
-        <setting label="32013" type="number" id="time" default="5" />
+        <setting label="32013" type="slider" id="time" default="5" range="1, 1, 60" option="int" />
     </category>
 </settings>
