@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.inttemp" name="Interior Temp" version="1.0.1" provider-name="flixie">
+<addon id="script.inttemp" name="Interior Temp" version="1.0.2" provider-name="flixie">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
   </requires>
@@ -9,18 +9,18 @@
 
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Shows temperature and humidity from sensor</summary>
-    <summary lang="de">Zeigt Innentemperatur und relative Luftfeuchte an</summary>
+    <summary lang="de">Zeigt Temperatur und relative Luftfeuchte an</summary>
     <description lang="en">Shows temperature and humidity from sensor</description>
-    <description lang="de">Zeigt Innentemperatur und relative Luftfeuchte an</description>
+    <description lang="de">Zeigt die (Raum-)Temperatur und relative Luftfeuchte an, die von einem Thermometer/Hygrometer
+    über GPIO ausgelsen werden. Die Pin-Nummer, sowie das Sensormodell können in der Konfigurationsseite
+    dieses Plugins gesetzt werden.</description>
 
     <language>en de</language>
     <platform>all</platform>
     <license>GPL-2.0</license>
-    <source>http://github.com/schuergi/plugin.program.inttemp</source>
-    <news>v1.0 (11/09/2019)
-      [fix] fixed the translations
-      [fix] actually made it work
-      [new] configuration page
+    <source>http://github.com/schuergi/script.inttemp</source>
+    <news>v1.0.2 (11/09/2019)
+      [fix] better readability on screen
     </news>
     <assets>
         <icon>resources/icon.png</icon>

@@ -35,9 +35,11 @@ humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
 # If this happens try again!
 
 if humidity is not None and temperature is not None:
-    line1 = 'Temp: {0:0.1f}°C '.format(temperature) + __settings__.getLocalizedString(32014) + ': {0:0.1f}%rLF'.format(humidity)
+    line1 = '{0:0.1f}°C / {1:0.1f}%'.format(temperature, humidity)
+    line2 = __settings__.getLocalizedString(32016) + ' / ' + __settings__.getLocalizedString(32014)
 
 else:
-    line1 = __settings__.getLocalizedString(32015)
+    line1 = __addonname__
+    line2 = __settings__.getLocalizedString(32015)
 
-xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__,line1, time, __icon__))
+xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(line1, line2, time, __icon__))

@@ -29,3 +29,7 @@ msgstr ""
 msgctxt "#32015"
 msgid "Failed to read sensor. Please try again!"
 msgstr ""
+
+msgctxt "#32016"
+msgid "Temperature"
+msgstr ""
